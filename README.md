@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+POSTMAN REQUEST
 
-Things you may want to cover:
+POST localhost:3000/api/v1/orders
 
-* Ruby version
+Body:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+{
+    "data": {
+        "customer_id": 1,
+        "credit_card_number": "5555555555554444",
+          "credit_card_exp_month": "12",
+          "credit_card_exp_year": "2030",
+          "credit_card_cvv": "123"
+    }
+}
